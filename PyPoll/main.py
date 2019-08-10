@@ -70,7 +70,7 @@ with open (ppfiles, newline = '') as csvfile:
         txtfile.write(f"-------------------------- \n")
         txtfile.write(f"Khan: {khanpercent} ({khanvotes}) \n")
         txtfile.write(f"Correy: {correypercent} ({correyvotes}) \n")
-        txtfile.write(f"Li:  {lipercent} ({livotes})")
+        txtfile.write(f"Li:  {lipercent} ({livotes}) \n")
         txtfile.write(f"O'Tooley: {otooleypercent} ({otooley}) \n")
         txtfile.write(f"-------------------------- \n")
         txtfile.write(f"Winner: {winner} ({maxwins}) \n")
