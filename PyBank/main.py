@@ -2,7 +2,7 @@ import os
 import csv
 
 
-pbfiles = os.path.join('..','Pybank','Resources','budget_data.csv')
+pbfiles = os.path.join('Pybank','Resources','budget_data.csv')
 # create variables for the information we need such as totalm months, 
 # total revenue, a previous revenue that we will continuously reset 
 # in our following for loop to reference when we calculate revenue changes
