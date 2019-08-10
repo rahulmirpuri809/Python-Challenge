@@ -57,12 +57,11 @@ with open (pbfiles, newline = '') as csvfile:
     print(f"Greatest Increase in Profits: ",greatestmonth, (greatestincrease))
     print(f"Greatest Decrease in Profits: ",lowestmonth, (greatestdecrease))
 
-#write an output txt file to display the results
     PyBank_Output = os.path.join('..','PyBank','Resources','PyBank_Budget_Results.text')
     with open (PyBank_Output, 'w') as txtfile:
-        txtfile.write(f"Financial Analysis")
-        txtfile.write(f"----------------------")
-        txtfile.write(f"Total: ",totalrevenue)
-        txtfile.write(f"Average Change: ",averagechange)
-        txtfile.write(f"Greatest Increase in Profits: ",greatestmonth, (greatestincrease))
-        txtfile.write(f"Greatest Decrease in Profits: ",lowestmonth, (greatestdecrease))
+        txtfile.write(f"Financial Analysis \n")
+        txtfile.write(f"---------------------- \n")
+        txtfile.write(f"Total: {totalrevenue} \n" )
+        txtfile.write(f"Average Change: {averagechange} \n")
+        txtfile.write(f"Greatest Increase in Profits: {greatestmonth} {(greatestincrease)} \n")
+        txtfile.write(f"Greatest Decrease in Profits: {lowestmonth} ({greatestdecrease}) \n)
