@@ -57,7 +57,7 @@ with open (pbfiles, newline = '') as csvfile:
     print(f"Greatest Increase in Profits: ",greatestmonth, (greatestincrease))
     print(f"Greatest Decrease in Profits: ",lowestmonth, (greatestdecrease))
 
-    PyBank_Output = os.path.join('..','PyBank','Resources','PyBank_Budget_Results.text')
+    PyBank_Output = os.path.join('PyBank','Resources','PyBank_Budget_Results.text')
     with open (PyBank_Output, 'w') as txtfile:
         txtfile.write(f"Financial Analysis \n")
         txtfile.write(f"---------------------- \n")
