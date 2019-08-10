@@ -63,5 +63,5 @@ with open (pbfiles, newline = '') as csvfile:
         txtfile.write(f"---------------------- \n")
         txtfile.write(f"Total: {totalrevenue} \n" )
         txtfile.write(f"Average Change: {averagechange} \n")
-        txtfile.write(f"Greatest Increase in Profits: {greatestmonth} {(greatestincrease)} \n")
+        txtfile.write(f"Greatest Increase in Profits: {greatestmonth} ({(greatestincrease)}) \n")
         txtfile.write(f"Greatest Decrease in Profits: {lowestmonth} ({greatestdecrease}) \n)
