@@ -61,7 +61,7 @@ with open (ppfiles, newline = '') as csvfile:
     print(f"Winner: {winner} ({maxwins})")
 
 
-    PyPoll_Output = os.path.join('..','PyPoll','Resources','PyPoll_Election_Results.text')
+    PyPoll_Output = os.path.join('PyPoll','Resources','PyPoll_Election_Results.text')
     with open (PyPoll_Output, 'w') as txtfile:
 
         txtfile.write(f"Election Results \n")
