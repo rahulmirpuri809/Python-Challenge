@@ -18,6 +18,8 @@ greatestmonth = ""
 lowestmonth = ""
 with open (pbfiles, newline = '') as csvfile:
     csvpath = csv.reader(csvfile, delimiter = ',')
+
+    # remove header row
     header = next(csvpath)
     
     
