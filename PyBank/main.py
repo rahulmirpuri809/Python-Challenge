@@ -18,8 +18,6 @@ greatestmonth = ""
 lowestmonth = ""
 with open (pbfiles, newline = '') as csvfile:
     csvpath = csv.reader(csvfile, delimiter = ',')
-
-    # remove header row
     header = next(csvpath)
     
     
@@ -58,3 +56,13 @@ with open (pbfiles, newline = '') as csvfile:
     print(f"Average Change: ",averagechange)
     print(f"Greatest Increase in Profits: ",greatestmonth, (greatestincrease))
     print(f"Greatest Decrease in Profits: ",lowestmonth, (greatestdecrease))
+
+#write an output txt file to display the results
+    PyBank_Output = os.path.join('..','PyBank','Resources','PyBank_Budget_Results.text')
+    with open (PyBank_Output, 'w') as txtfile:
+        txtfile.write(f"Financial Analysis")
+        txtfile.write(f"----------------------")
+        txtfile.write(f"Total: ",totalrevenue)
+        txtfile.write(f"Average Change: ",averagechange)
+        txtfile.write(f"Greatest Increase in Profits: ",greatestmonth, (greatestincrease))
+        txtfile.write(f"Greatest Decrease in Profits: ",lowestmonth, (greatestdecrease))
